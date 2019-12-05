@@ -6,8 +6,15 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'kylelaker/riscv.vim'
 Plug 'mattn/emmet-vim'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'w0rp/ale'
 call plug#end()
 
+let g:ale_fixers = {
+ \ 'javascript': ['eslint']
+ \ }
+let g:ale_sign_error = '❌'
+let g:ale_sign_warning = '⚠️'
+let g:ale_fix_on_save = 1
 let g:deoplete#enable_at_startup = 1
 let g:user_emmet_leader_key=','
 
