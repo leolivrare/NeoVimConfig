@@ -1,13 +1,12 @@
 call plug#begin()
 Plug 'morhetz/gruvbox'
 Plug 'sheerun/vim-polyglot'
-Plug 'w0rp/ale'
 Plug 'jiangmiao/auto-pairs'
 Plug 'kylelaker/riscv.vim'
 Plug 'mattn/emmet-vim'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'dense-analysis/ale'
 call plug#end()
+
 
 let g:deoplete#enable_at_startup = 1
 let g:user_emmet_leader_key=','
